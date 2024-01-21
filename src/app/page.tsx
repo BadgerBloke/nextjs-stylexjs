@@ -1,9 +1,25 @@
 import Image from "next/image";
+import stylex from "@stylexjs/stylex";
+
+import { colors } from "@stylexjs/open-props/lib/colors.stylex";
+
 import styles from "./page.module.css";
+
+const y = stylex.create({
+  test: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "6rem",
+    minHeight: "100dvh",
+    color: colors.cyan3,
+  },
+});
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main {...stylex.props(y.test)}>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
