@@ -16,6 +16,8 @@
   },
   "devDependencies": {
     "@stylexjs/babel-plugin": "^0.4.1",
+    "@stylexjs/dev-runtime": "^0.4.1",
+    "@stylexjs/eslint-plugin": "^0.4.1",
     "@stylexjs/nextjs-plugin": "^0.4.1",
     "@stylexjs/open-props": "^0.4.1",
     "@types/node": "^20",

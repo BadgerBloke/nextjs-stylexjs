@@ -1,7 +1,7 @@
 import Image from "next/image";
 import stylex from "@stylexjs/stylex";
 
-import { colors } from "@stylexjs/open-props/lib/colors.stylex";
+import { fonts } from "@stylexjs/open-props/lib/fonts.stylex";
 
 import styles from "./page.module.css";
 
@@ -13,7 +13,7 @@ const y = stylex.create({
     alignItems: "center",
     padding: "6rem",
     minHeight: "100dvh",
-    color: colors.cyan3,
+    fontFamily: fonts.sans,
   },
 });
 

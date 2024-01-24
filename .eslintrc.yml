@@ -5,4 +5,3 @@ plugins:
 rules:
   "@stylexjs/valid-styles":
     - error
-    - { ...options }
