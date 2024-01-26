@@ -1,3 +1,4 @@
+const path = require('path');
 const stylexPlugin = require("@stylexjs/nextjs-plugin");
 
 const nextConfig = {
@@ -6,5 +7,8 @@ const nextConfig = {
 };
 
 module.exports = stylexPlugin({
+  aliases: {
+    '~/*': [path.join(__dirname, '*')],
+  },
   rootDir: __dirname,
 })(nextConfig);
